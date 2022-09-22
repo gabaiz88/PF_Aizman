@@ -77,6 +77,11 @@ ol {
   color: grey;
 }
 
+.footer h7{
+  font-size: small;
+
+}
+
 .footer .contacto_footer a h6:hover{
   color: white;
 }
@@ -233,7 +238,7 @@ ol {
 .contact__form #image{
   width: 100px;
 } 
-
+/* RESPONSIVE PARA TABLET */
 @media (min-width: 768px){
 
   .main {
@@ -290,7 +295,7 @@ ol {
     width: 200px;
   } 
 }
-
+/* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px) {
   /* style del header */
   .main__header {
@@ -315,7 +320,7 @@ ol {
     color: #939396;
   }
 
-  /* style main principal */
+  /* CSS DE INDEX */
   .main_principal {
     color: white;
   }
@@ -361,7 +366,7 @@ ol {
     width: 1170px;
   }
 
-  /* style de productos */
+  /* CSS DE PRODUCTOS */
   .products {
     display: grid;
     grid-template-areas:
@@ -421,7 +426,7 @@ ol {
     grid-area: products__10;
   }
   /* En general para font size y padding se usa rem o em que es mas responsive */
-  /* style de contacto */
+  /* CSS DE CONTACTO */
   .contact_us {
     display: flex;
     flex-direction: row;
@@ -459,7 +464,7 @@ ol {
     height: 450px;
   }
 
-  /* style de nosotros */
+  /* CSS de NOSOTROS*/
   .about_us {
     display: flex;
     flex-direction: row;
@@ -481,6 +486,7 @@ ol {
     padding: 50px;
   }
 
+/* CSS DE LISTAPRECIO.html */
   .lista_precios {
     padding:180px 0px 50px 0px;
     display: grid;
