@@ -1,0 +1,599 @@
+* {
+    margin: 0;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .bodyCompleto {
+    background: #f0f2f0;
+    background: -webkit-linear-gradient(to bottom, #f0f2f0, #000c40);
+    background: linear-gradient(to bottom, #f0f2f0, #000c40);
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  /* logo whatsapp */
+  .fixed {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+  }
+  
+  .main__header {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 20%,
+      rgba(240, 242, 240, 1) 50%
+    );
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main__header__nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .main__header__logo__empresa {
+    padding: 15px 15px;
+  }
+  .main__header__logo__empresa img {
+    width: 100%;
+  }
+  
+  .footer {
+    text-align: center;
+    background-color: #000a36;
+    color: white;
+    width: 100vw;
+    bottom: 0px;
+    padding-top: 10px;
+  }
+  
+  .footer img {
+    padding-top: 10px;
+  }
+  
+  .footer .contacto_footer h5{
+    font-size: medium;
+    color: rgb(159, 158, 158);
+  }
+  
+  .footer .contacto_footer h6{
+    font-size: small;
+    color: grey;
+  }
+  
+  .footer h7{
+    font-size: small;
+  
+  }
+  
+  .footer .contacto_footer a h6:hover{
+    color: white;
+  }
+  
+  .main__header__nav a {
+    color: #000c40;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  
+  .main_principal_our {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .main_principal_our__image img {
+    padding-top: 10px;
+    width: 95vw;
+    padding-bottom: 10px;
+  }
+  
+  .main_principal_video__fabricacion iframe {
+    width: 95vw;
+    height: 333px;
+  }
+  
+  .main_product_images img {
+    width: 95vw;
+  }
+  
+  .main {
+    padding-bottom: 50px;
+  }
+  
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .products img {
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .lista_precios {
+    padding: 100px;
+    display: grid;
+    grid-template-areas:
+      "TextoLPMenor TextoLPMayor"
+      "lista_menor_word lista_mayor_word"
+      "lista_menor_pdf lista_mayor_pdf";
+    grid-template-columns:1fr, 1fr;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .arrow_1 img {
+   display: none;
+  }
+  .arrow_2 img {
+    display: none;
+   }
+   .TextoLPMayor h2 {
+    text-align: center;
+  }
+  .TextoLPMenor h2 {
+    text-align: center;
+  }
+  .TextoLPMenor {
+    grid-area: TextoLPMenor;
+  }
+  .TextoLPMayor {
+    grid-area: TextoLPMayor;
+  }
+  .lista_menor_pdf {
+    grid-area: lista_menor_pdf;
+  }
+  .lista_menor_word {
+    grid-area: lista_menor_word;
+  }
+  .lista_mayor_pdf {
+    grid-area: lista_mayor_pdf;
+  }
+  .lista_mayor_word {
+    grid-area: lista_mayor_word;
+  }
+  .lista_menor_pdf img {
+    width: 110px;
+  }
+  .lista_menor_word img { 
+    height: 130px;
+    width: 110px;
+  }
+  .lista_mayor_pdf img {
+    width: 110px;
+  }
+  .lista_mayor_word img {
+    height: 130px;
+    width: 110px;
+  }
+  
+  .about_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px 15px;
+  }
+  
+  .about_us_description {
+    border-radius: 41px;
+    border: solid black;
+    text-align: center;
+    height: fit-content;
+  }
+  
+  .about_us_description h2 h6{
+   font-size: x-small;
+  }
+  
+  .about_us_image img {
+    width: 380px;
+    height: 400px;
+    padding: 20px 0 100px 0;
+  }
+  
+  .contact_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 80px 15px;
+  }
+  
+  .map iframe {
+    width: 350px; 
+    height: 250px;
+    padding-top: 15px;
+  }
+  .contact__form textarea{
+    width: 250px;
+    height: 180px;
+  }
+  .contact__form input{
+    width: 250px;
+  }
+  
+  .contact__form #image{
+    width: 100px;
+  } 
+  /* RESPONSIVE PARA TABLET */
+  @media (min-width: 768px){
+  
+    .main {
+      padding-bottom: 100px;
+    }
+  
+    .products {
+      display: grid;
+      grid-template-areas:
+        "products__1 products__2"
+        "products__3 products__4"
+        "products__5 products__6" 
+        "products__7 products__8" 
+        "products__9 products__10";
+      grid-template-rows: 1fr, 1fr;
+      grid-template-columns: 1fr, 1fr;
+      gap: 15px;
+      align-items: center;
+      justify-items: center;
+    }
+  
+    .about_us {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 130px 15px 200px 15px;
+    }
+    
+    .about_us_image img {
+      width: 750px;
+      padding: 80px 0 0 0;
+    }
+  
+    .lista_precios {
+      padding: 220px 0px 140px 0px; 
+      justify-content: space-evenly;
+    }
+  
+    .map iframe {
+      width: 600px; 
+      height: 450px;
+      padding-top: 40px;
+    }
+  
+    .contact__form textarea{
+      width: 350px;
+      height: 220px;
+    }
+    .contact__form input{
+      width: 350px;
+    }
+    .contact__form #image{
+      width: 200px;
+    } 
+  }
+  /* RESPONSIVE PARA DESKTOP */
+  @media (min-width: 992px) {
+    /* style del header */
+    .main__header {
+      display: grid;
+      position: fixed;
+      z-index: 1;
+      grid-template-columns: 500px auto;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .main__header__nav {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-content: end;
+      align-items: flex-end;
+      height: 110px;
+      gap: 0 20px;
+    }
+  
+    .main__header__nav :hover{
+      color: #939396;
+    }
+  
+    /* CSS DE INDEX */
+    .main_principal {
+      color: white;
+    }
+  
+    .main_principal_our {
+      display: grid;
+      grid-template-areas:
+        "carrusel carrusel"
+        "main_img_nosotros main_video";
+      grid-template-rows: 2fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      justify-content: center;
+      align-items:flex-start;
+    }
+    .main_principal_our__image {
+      grid-area: main_img_nosotros;
+      justify-self: end;
+    }
+  
+    .main_principal_our__image img {
+      width: 600px;
+    }
+  
+    .main_principal_video__fabricacion {
+      grid-area: main_video;
+      padding-top: 10px;
+    }
+  
+    .main_principal_video__fabricacion iframe {
+      width: 560px;
+    }
+  
+    .main_carrusel{
+      grid-area: carrusel;
+      width: 1150px;
+      justify-self: center;
+      align-self: end;
+      padding-right: 25px;
+    }
+  
+    .main_product_images img {
+      width: 1170px;
+    }
+  
+    /* CSS DE PRODUCTOS */
+    .products {
+      display: grid;
+      grid-template-areas:
+        "products__1 products__2 products__3 products__4 products__5"
+        "products__6 products__7 products__8 products__9 products__10";
+      grid-template-rows: 1fr, 1fr;
+      grid-template-columns: repeat(5, 1fr);
+      padding: 200px 100px 100px 50px;
+      gap: 15px;
+      align-items: center;
+      justify-items: center;
+    }
+    .products img {
+      width: 250px;
+    }
+    .products img:hover {
+      transform: scale(1.2);
+      transition: all 1s;
+    }
+    .products__1 {
+      grid-area: products__1;
+    }
+    .products__1 img{
+    width: 190px;
+    }
+    .products__2 {
+      grid-area: products__2;
+    }
+    .products__3 {
+      grid-area: products__8;
+    }
+    .products__3 img{
+      width: 220px;
+    }
+    .products__4 {
+      grid-area: products__4;
+    }
+    .products__5 {
+      grid-area: products__5;
+    }
+    .products__6 {
+      grid-area: products__6;
+    }
+    .products__7 {
+      grid-area: products__7;
+    }
+    .products__8 {
+      grid-area: products__3;
+    }
+    .products__8 img{
+      width: 200px;
+    }
+    .products__9 {
+      grid-area: products__9;
+    }
+    .products__10 {
+      grid-area: products__10;
+    }
+    /* En general para font size y padding se usa rem o em que es mas responsive */
+    /* CSS DE CONTACTO */
+    .contact_us {
+      display: flex;
+      flex-direction: row;
+      justify-content:space-around;
+      align-items: center;
+      padding: 200px 120px 150px 120px;
+    }
+  
+    .tablaContacto {
+      border-style: none;
+      border-color: #616161;
+      padding-right: 100px;
+    }
+  
+    .contact__form textarea{
+      width: 280px;
+      height: 250px;
+    }
+    .contact__form input{
+      width: 280px;
+    }
+  
+    .contact__form__label {
+      font-size: 1.5rem;
+      color: white;
+      margin-right: 10px;
+    }
+  
+    #contact__form__asterisco {
+      color: red;
+    }
+  
+    .map iframe {
+      width: 600px; 
+      height: 450px;
+    }
+  
+    /* CSS de NOSOTROS*/
+    .about_us {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 200px 0 80px 0px;
+    }
+  
+    .about_us_description {
+      border-radius: 41px;
+      border: solid black;
+      width: 600px;
+      text-align: center;
+      height: fit-content;
+    }
+  
+    .about_us_image img {
+      width: 700px;
+      padding: 50px;
+    }
+  
+  /* CSS DE LISTAPRECIO.html */
+    .lista_precios {
+      padding:180px 0px 50px 0px;
+      display: grid;
+      grid-template-areas:
+        "TextoLPMenor arrow_1 lista_menor_pdf lista_menor_word"
+        "TextoLPMayor arrow_2 lista_mayor_pdf lista_mayor_word";
+      grid-template-columns:1fr, 1fr, 1fr, 1fr;
+      grid-template-rows: 1fr, 1fr;
+      justify-content: center;
+      gap: 0px;
+    }
+  
+    .arrow_1 img {
+      width: 150px;
+      padding-top: 35px;
+      display: block;
+    }
+  /* ver el tema del tamaño */
+    .arrow_2 img {
+      width: 150px;
+      padding-top: 35px;
+      display: block;
+    }
+  
+    .lista_menor_pdf img {
+      padding: 0 30px 30px 0px;
+      width: 125px;
+      height: fit-content;
+    }
+  
+    .lista_mayor_pdf img {
+      padding: 0 30px 30px 0px;
+      width: 125px;
+      height: fit-content;
+    }
+  
+    .arrow_1, .arrow_2{
+      animation-name: arrow;
+      animation-iteration-count: infinite;
+      animation-duration: 1.5s;
+    }
+  
+    @keyframes arrow {
+      0%{
+        opacity: 0;
+      }
+      100%{
+        transform: translate(280px);
+        
+      }
+    }
+  
+    .lista_menor_pdf img:hover {
+      transform: scale(1.2);
+      transition:ease-in-out 1s;
+      opacity: 50%;
+    }
+    .lista_menor_word img:hover {
+      transform: scale(1.2);
+      transition: ease-in-out 1s;
+      opacity: 50%;
+    }
+    .lista_mayor_word img:hover {
+      transform: scale(1.2);
+      transition: ease-in-out 1s;
+      opacity: 50%; 
+    }
+    .lista_mayor_pdf img:hover {
+      transform: scale(1.2);
+      transition: ease-in-out 1s;
+      opacity: 50%;
+    }
+    .lista_menor_pdf {
+      grid-area: lista_menor_pdf;
+      padding-left: 300px;
+    }
+    .lista_menor_word {
+      grid-area: lista_menor_word;
+    }
+    .lista_mayor_pdf {
+      grid-area: lista_mayor_pdf;
+      padding-left: 300px;
+    }
+    .lista_mayor_word {
+      grid-area: lista_mayor_word;
+    }
+    .arrow_1 {
+      grid-area: arrow_1;
+    }
+    .arrow_2 {
+      grid-area: arrow_2;
+    }
+    .TextoLPMenor {
+      grid-area: TextoLPMenor;
+    }
+    .TextoLPMayor {
+      grid-area: TextoLPMayor;
+    }
+    .TextoLPMayor h2 {
+      padding-top: 50px;
+      width: 300px;
+      font-family:sans-serif !important;
+    }
+    .TextoLPMenor h2 {
+    padding-top: 50px;
+    width: 300px;
+    font-family:sans-serif !important;
+  }
+  }
+  
