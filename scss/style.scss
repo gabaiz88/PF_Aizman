@@ -1,3 +1,15 @@
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+@import "./pages/index";
+@import "./pages/nosotros";
+@import "./pages/listaDePrecios";
+@import "./pages/productos";
+@import "./pages/contacto";
+
 * {
     margin: 0;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -91,45 +103,6 @@
     font-size: 1.2rem;
     font-weight: bold;
     padding-left: 10px;
-  }
-  
-  .main_principal_our {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-  }
-  
-  .main_principal_our__image img {
-    padding-top: 10px;
-    width: 95vw;
-    padding-bottom: 10px;
-  }
-  
-  .main_principal_video__fabricacion iframe {
-    width: 95vw;
-    height: 333px;
-  }
-  
-  .main_product_images img {
-    width: 95vw;
-  }
-  
-  .main {
-    padding-bottom: 50px;
-  }
-  
-  .products {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .products img {
-    padding: 10px;
-    width: 300px;
   }
   
   .lista_precios {
@@ -241,24 +214,8 @@
   /* RESPONSIVE PARA TABLET */
   @media (min-width: 768px){
   
-    .main {
-      padding-bottom: 100px;
-    }
-  
-    .products {
-      display: grid;
-      grid-template-areas:
-        "products__1 products__2"
-        "products__3 products__4"
-        "products__5 products__6" 
-        "products__7 products__8" 
-        "products__9 products__10";
-      grid-template-rows: 1fr, 1fr;
-      grid-template-columns: 1fr, 1fr;
-      gap: 15px;
-      align-items: center;
-      justify-items: center;
-    }
+    
+    
   
     .about_us {
       display: flex;
@@ -320,111 +277,13 @@
       color: #939396;
     }
   
-    /* CSS DE INDEX */
-    .main_principal {
-      color: white;
-    }
-  
-    .main_principal_our {
-      display: grid;
-      grid-template-areas:
-        "carrusel carrusel"
-        "main_img_nosotros main_video";
-      grid-template-rows: 2fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      justify-content: center;
-      align-items:flex-start;
-    }
-    .main_principal_our__image {
-      grid-area: main_img_nosotros;
-      justify-self: end;
-    }
-  
-    .main_principal_our__image img {
-      width: 600px;
-    }
-  
-    .main_principal_video__fabricacion {
-      grid-area: main_video;
-      padding-top: 10px;
-    }
-  
-    .main_principal_video__fabricacion iframe {
-      width: 560px;
-    }
-  
-    .main_carrusel{
-      grid-area: carrusel;
-      width: 1150px;
-      justify-self: center;
-      align-self: end;
-      padding-right: 25px;
-    }
+    
   
     .main_product_images img {
       width: 1170px;
     }
   
-    /* CSS DE PRODUCTOS */
-    .products {
-      display: grid;
-      grid-template-areas:
-        "products__1 products__2 products__3 products__4 products__5"
-        "products__6 products__7 products__8 products__9 products__10";
-      grid-template-rows: 1fr, 1fr;
-      grid-template-columns: repeat(5, 1fr);
-      padding: 200px 100px 100px 50px;
-      gap: 15px;
-      align-items: center;
-      justify-items: center;
-    }
-    .products img {
-      width: 250px;
-    }
-    .products img:hover {
-      transform: scale(1.2);
-      transition: all 1s;
-    }
-    .products__1 {
-      grid-area: products__1;
-    }
-    .products__1 img{
-    width: 190px;
-    }
-    .products__2 {
-      grid-area: products__2;
-    }
-    .products__3 {
-      grid-area: products__8;
-    }
-    .products__3 img{
-      width: 220px;
-    }
-    .products__4 {
-      grid-area: products__4;
-    }
-    .products__5 {
-      grid-area: products__5;
-    }
-    .products__6 {
-      grid-area: products__6;
-    }
-    .products__7 {
-      grid-area: products__7;
-    }
-    .products__8 {
-      grid-area: products__3;
-    }
-    .products__8 img{
-      width: 200px;
-    }
-    .products__9 {
-      grid-area: products__9;
-    }
-    .products__10 {
-      grid-area: products__10;
-    }
+    
     /* En general para font size y padding se usa rem o em que es mas responsive */
     /* CSS DE CONTACTO */
     .contact_us {
