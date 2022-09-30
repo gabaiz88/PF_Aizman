@@ -1,0 +1,186 @@
+.lista_precios {
+  padding: 100px;
+  display: grid;
+  grid-template-areas:
+    "TextoLPMenor TextoLPMayor"
+    "lista_menor_word lista_mayor_word"
+    "lista_menor_pdf lista_mayor_pdf";
+  grid-template-columns: 1fr, 1fr;
+  justify-content: center;
+  gap: 50px;
+}
+
+.arrow_1 img {
+  display: none;
+}
+.arrow_2 img {
+  display: none;
+}
+
+.TextoLPMenor {
+  grid-area: TextoLPMenor;
+  h2 {
+    text-align: center;
+  }
+}
+
+.TextoLPMayor {
+  grid-area: TextoLPMayor;
+  h2 {
+    text-align: center;
+  }
+}
+
+.lista_menor_pdf {
+  grid-area: lista_menor_pdf;
+  img {
+    width: 110px;
+  }
+}
+
+.lista_menor_word {
+  grid-area: lista_menor_word;
+  img {
+    height: 130px;
+    width: 110px;
+  }
+}
+
+.lista_mayor_pdf {
+  grid-area: lista_mayor_pdf;
+  img {
+    width: 110px;
+  }
+}
+
+.lista_mayor_word {
+  grid-area: lista_mayor_word;
+  img {
+    height: 130px;
+    width: 110px;
+  }
+}
+
+/* RESPONSIVE PARA TABLET */
+@media (min-width: 768px) {
+  .lista_precios {
+    padding: 220px 0px 140px 0px;
+    justify-content: space-evenly;
+  }
+}
+
+/* RESPONSIVE PARA DESKTOP */
+@media (min-width: 992px) {
+  /* CSS DE LISTAPRECIO.html */
+
+  .lista_precios {
+    padding: 180px 0px 50px 0px;
+    display: grid;
+    grid-template-areas:
+      "TextoLPMenor arrow_1 lista_menor_pdf lista_menor_word"
+      "TextoLPMayor arrow_2 lista_mayor_pdf lista_mayor_word";
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+    justify-content: center;
+    gap: 0px;
+  }
+
+  .arrow_1 {
+    grid-area: arrow_1;
+    animation-name: arrow;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    img {
+        width: 150px;
+        padding-top: 35px;
+        display: block;
+      }
+  }
+  
+  .arrow_2 {
+    grid-area: arrow_2;
+    animation-name: arrow;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    img {
+        width: 150px;
+        padding-top: 35px;
+        display: block;
+      }
+  }
+
+  @keyframes arrow {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      transform: translate(280px);
+    }
+  }
+
+  .lista_menor_pdf {
+    grid-area: lista_menor_pdf;
+    padding-left: 300px;
+    img {
+      padding: 0 30px 30px 0px;
+      width: 125px;
+      height: fit-content;
+    }
+    img:hover {
+      transform: scale(1.2);
+      transition: ease-in-out 1s;
+      opacity: 50%;
+    }
+  }
+
+  .lista_menor_word {
+    grid-area: lista_menor_word;
+    img:hover {
+      transform: scale(1.2);
+      transition: ease-in-out 1s;
+      opacity: 50%;
+    }
+  }
+
+  .lista_mayor_pdf {
+    grid-area: lista_mayor_pdf;
+    padding-left: 300px;
+    img {
+      padding: 0 30px 30px 0px;
+      width: 125px;
+      height: fit-content;
+    }
+    img:hover {
+      transform: scale(1.2);
+      transition: ease-in-out 1s;
+      opacity: 50%;
+    }
+  }
+
+  .lista_mayor_word {
+    grid-area: lista_mayor_word;
+    img:hover {
+      transform: scale(1.2);
+      transition: ease-in-out 1s;
+      opacity: 50%;
+    }
+  }
+
+  .TextoLPMenor {
+    grid-area: TextoLPMenor;
+    h2 {
+        padding-top: 50px;
+        width: 300px;
+        font-family: sans-serif !important;
+      }
+  }
+
+  .TextoLPMayor {
+    grid-area: TextoLPMayor;
+    h2 {
+        padding-top: 50px;
+        width: 300px;
+        font-family: sans-serif !important;
+      }
+  }
+}
