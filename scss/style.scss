@@ -16,20 +16,26 @@
     "Lucida Sans", Arial, sans-serif !important;
 }
 
-a {
-  text-decoration: none;
-  color: #000000;
+.main__header {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(240, 242, 240, 1) 50%
+  );
+  padding: 0px 15px 0px 15px;
+}
+
+.navbar-brand{
+  img{
+    width: 320px;
+  }
 }
 
 .bodyCompleto {
   background: #f0f2f0;
   background: -webkit-linear-gradient(to bottom, #f0f2f0, #000c40);
   background: linear-gradient(to bottom, #f0f2f0, #000c40);
-}
-
-ul,
-ol {
-  list-style: none;
 }
 
 /* logo whatsapp */
@@ -39,40 +45,6 @@ ol {
   right: 20px;
   img {
     width: 40px;
-  }
-}
-
-.main__header {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 20%,
-    rgba(240, 242, 240, 1) 50%
-  );
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  &__nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px;
-  }
-  &__logo__empresa {
-    padding: 15px 15px;
-    img {
-      width: 100%;
-    }
-  }
-  &__nav {
-    a {
-      color: #000c40;
-      font-size: 1.2rem;
-      font-weight: bold;
-      padding-left: 10px;
-    }
   }
 }
 
@@ -104,6 +76,8 @@ ol {
   }
 }
 
+
+
 /* RESPONSIVE PARA TABLET */
 @media (min-width: 768px) {
   /* logo whatsapp */
@@ -115,34 +89,30 @@ ol {
       width: 50px;
     }
   }
+
+  
+.navbar-brand{
+  img{
+    width: 450px;
+  }
+}
 }
 
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px) {
-  /* style del header */
-  .main__header {
-    display: grid;
-    position: fixed;
-    z-index: 1;
-    grid-template-columns: 500px auto;
-    justify-content: space-around;
-    align-items: center;
-    &__nav {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      justify-content: end;
-      align-items: flex-end;
-      height: 110px;
-      gap: 0 20px;
-      :hover {
-        color: #939396;
-      }
-    }
-  }
-
-  .main_product_images img {
-    width: 1170px;
-  }
 
   /* En general para font size y padding se usa rem o em que es mas responsive */
-}
+
+  .main__header {
+    padding: 0px 200px 0px 100px;
+    text-decoration: solid;
+    font-size:medium;
+  }
+
+  .navbar-nav{
+    padding-top: 100px;
+  }
+
+
+  }
+  

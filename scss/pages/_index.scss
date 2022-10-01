@@ -1,5 +1,4 @@
 .main {
-  padding-bottom: 50px;
 
   &_principal_our {
     display: flex;
@@ -23,10 +22,9 @@
 
 /* RESPONSIVE PARA TABLET */
 @media (min-width: 768px) {
-  .main {
-    padding-bottom: 100px;
+  
   }
-}
+
 
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px) {
@@ -38,14 +36,14 @@
       width: 1150px;
       justify-self: center;
       align-self: end;
-      padding-right: 25px;
+      padding-right: 30px;
     }
     &_our {
       display: grid;
       grid-template-areas:
         "carrusel carrusel"
         "main_img_nosotros main_video";
-      grid-template-rows: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
       justify-content: center;

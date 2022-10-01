@@ -8381,27 +8381,21 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-.main {
-  padding-bottom: 50px; }
-  .main_principal_our {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px; }
-    .main_principal_our__image img {
-      padding-top: 10px;
-      width: 95vw;
-      padding-bottom: 10px; }
-    .main_principal_our__video__fabricacion iframe {
-      width: 95vw;
-      height: 333px; }
+.main_principal_our {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px; }
+  .main_principal_our__image img {
+    padding-top: 10px;
+    width: 95vw;
+    padding-bottom: 10px; }
+  .main_principal_our__video__fabricacion iframe {
+    width: 95vw;
+    height: 333px; }
 
 /* RESPONSIVE PARA TABLET */
-@media (min-width: 768px) {
-  .main {
-    padding-bottom: 100px; } }
-
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px) {
   /* CSS DE INDEX */
@@ -8412,11 +8406,11 @@ textarea.form-control-lg {
       width: 1150px;
       justify-self: center;
       align-self: end;
-      padding-right: 25px; }
+      padding-right: 30px; }
     .main_principal_our {
       display: grid;
       grid-template-areas: "carrusel carrusel" "main_img_nosotros main_video";
-      grid-template-rows: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
       justify-content: center;
@@ -8470,7 +8464,7 @@ textarea.form-control-lg {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding: 200px 0 80px 0px; }
+    padding: 120px 0 80px 0px; }
     .about_us_description {
       border-radius: 41px;
       border: solid black;
@@ -8537,7 +8531,7 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   /* CSS DE LISTAPRECIO.html */
   .lista_precios {
-    padding: 180px 0px 50px 0px;
+    padding: 100px 0px 50px 0px;
     display: grid;
     grid-template-areas: "TextoLPMenor arrow_1 lista_menor_pdf lista_menor_word" "TextoLPMayor arrow_2 lista_mayor_pdf lista_mayor_word";
     grid-template-columns: 1fr, 1fr, 1fr, 1fr;
@@ -8642,7 +8636,7 @@ textarea.form-control-lg {
     grid-template-areas: "products__1 products__2 products__3 products__4 products__5" "products__6 products__7 products__8 products__9 products__10";
     grid-template-rows: 1fr, 1fr;
     grid-template-columns: repeat(5, 1fr);
-    padding: 200px 100px 100px 50px;
+    padding: 100px 100px 100px 50px;
     gap: 15px;
     align-items: center;
     justify-items: center; }
@@ -8725,7 +8719,7 @@ textarea.form-control-lg {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 200px 120px 150px 120px; }
+    padding: 120px 120px 150px 120px; }
   .contact__form__tablaContacto {
     border-style: none;
     border-color: #616161;
@@ -8747,18 +8741,18 @@ textarea.form-control-lg {
   margin: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif !important; }
 
-a {
-  text-decoration: none;
-  color: #000000; }
+.main__header {
+  background: white;
+  background: linear-gradient(180deg, white 20%, #f0f2f0 50%);
+  padding: 0px 15px 0px 15px; }
+
+.navbar-brand img {
+  width: 320px; }
 
 .bodyCompleto {
   background: #f0f2f0;
   background: -webkit-linear-gradient(to bottom, #f0f2f0, #000c40);
   background: linear-gradient(to bottom, #f0f2f0, #000c40); }
-
-ul,
-ol {
-  list-style: none; }
 
 /* logo whatsapp */
 .fixed {
@@ -8767,29 +8761,6 @@ ol {
   right: 20px; }
   .fixed img {
     width: 40px; }
-
-.main__header {
-  background: white;
-  background: linear-gradient(180deg, white 20%, #f0f2f0 50%);
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .main__header__nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px; }
-  .main__header__logo__empresa {
-    padding: 15px 15px; }
-    .main__header__logo__empresa img {
-      width: 100%; }
-  .main__header__nav a {
-    color: #000c40;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding-left: 10px; }
 
 .footer {
   text-align: center;
@@ -8819,27 +8790,16 @@ ol {
     bottom: 60px;
     right: 40px; }
     .fixed img {
-      width: 50px; } }
+      width: 50px; }
+  .navbar-brand img {
+    width: 450px; } }
 
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px) {
-  /* style del header */
+  /* En general para font size y padding se usa rem o em que es mas responsive */
   .main__header {
-    display: grid;
-    position: fixed;
-    z-index: 1;
-    grid-template-columns: 500px auto;
-    justify-content: space-around;
-    align-items: center; }
-    .main__header__nav {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      justify-content: end;
-      align-items: flex-end;
-      height: 110px;
-      gap: 0 20px; }
-      .main__header__nav :hover {
-        color: #939396; }
-  .main_product_images img {
-    width: 1170px; }
-  /* En general para font size y padding se usa rem o em que es mas responsive */ }
+    padding: 0px 200px 0px 100px;
+    text-decoration: solid;
+    font-size: medium; }
+  .navbar-nav {
+    padding-top: 100px; } }
