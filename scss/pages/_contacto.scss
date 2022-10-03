@@ -34,6 +34,11 @@
     padding-top: 40px;
   }
 
+  .contact_us{
+    justify-content: center;
+    align-items: center;
+  }
+  
   .contact__form {
     textarea {
       width: 350px;
@@ -54,29 +59,32 @@
   .contact_us {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 120px 120px 150px 120px;
+    justify-content: space-evenly;
+    &_form{
+      width: 30%;
+    }
+
   }
-  .contact__form {
-    &__tablaContacto {
-      border-style: none;
-      border-color: #616161;
-      padding-right: 100px;
-    }
-    textarea {
-      width: 280px;
-      height: 250px;
-    }
-    input {
-      width: 280px;
-    }
-    &__label {
-      font-size: 1.5rem;
-      color: white;
-      margin-right: 10px;
-    }
-  }
+
+  // .contact__form {
+  //   &__tablaContacto {
+  //     border-style: none;
+  //     border-color: #616161;
+  //     padding-right: 100px;
+  //   }
+  //   textarea {
+  //     width: 280px;
+  //     height: 250px;
+  //   }
+  //   input {
+  //     width: 280px;
+  //   }
+  //   &__label {
+  //     font-size: 1.5rem;
+  //     color: white;
+  //     margin-right: 10px;
+  //   }
+  // }
   .map iframe {
     width: 600px;
     height: 450px;

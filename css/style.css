@@ -8448,13 +8448,10 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
   .about_us {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 130px 15px 200px 15px; }
+    flex-direction: column; }
     .about_us_image img {
-      width: 750px;
-      padding: 80px 0 0 0; } }
+      width: 600px;
+      padding-top: 50px; } }
 
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px) {
@@ -8462,9 +8459,7 @@ textarea.form-control-lg {
   .about_us {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 120px 0 80px 0px; }
+    justify-content: space-evenly; }
     .about_us_description {
       border-radius: 41px;
       border: solid black;
@@ -8647,6 +8642,9 @@ textarea.form-control-lg {
     width: 600px;
     height: 450px;
     padding-top: 40px; }
+  .contact_us {
+    justify-content: center;
+    align-items: center; }
   .contact__form textarea {
     width: 350px;
     height: 220px; }
@@ -8661,22 +8659,9 @@ textarea.form-control-lg {
   .contact_us {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 120px 120px 150px 120px; }
-  .contact__form__tablaContacto {
-    border-style: none;
-    border-color: #616161;
-    padding-right: 100px; }
-  .contact__form textarea {
-    width: 280px;
-    height: 250px; }
-  .contact__form input {
-    width: 280px; }
-  .contact__form__label {
-    font-size: 1.5rem;
-    color: white;
-    margin-right: 10px; }
+    justify-content: space-evenly; }
+    .contact_us_form {
+      width: 30%; }
   .map iframe {
     width: 600px;
     height: 450px; } }
@@ -8689,6 +8674,8 @@ textarea.form-control-lg {
   background: white;
   background: linear-gradient(180deg, white 20%, #f0f2f0 50%);
   padding: 0px 15px 0px 15px; }
+  .main__headernavbar {
+    position: fixed; }
 
 .navbar-brand img {
   width: 320px; }
