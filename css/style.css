@@ -8608,69 +8608,13 @@ textarea.form-control-lg {
       width: 300px;
       font-family: sans-serif !important; } }
 
-.products {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .products img {
-    padding: 10px;
-    width: 300px; }
-
-/* RESPONSIVE PARA TABLET */
-@media (min-width: 768px) {
-  .products {
-    display: grid;
-    grid-template-areas: "products__1 products__2" "products__3 products__4" "products__5 products__6" "products__7 products__8" "products__9 products__10";
-    grid-template-rows: 1fr, 1fr;
-    grid-template-columns: 1fr, 1fr;
-    gap: 15px;
-    align-items: center;
-    justify-items: center; } }
-
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px) {
-  /* CSS DE PRODUCTOS */
-  .products {
-    display: grid;
-    grid-template-areas: "products__1 products__2 products__3 products__4 products__5" "products__6 products__7 products__8 products__9 products__10";
-    grid-template-rows: 1fr, 1fr;
-    grid-template-columns: repeat(5, 1fr);
-    padding: 100px 100px 100px 50px;
-    gap: 15px;
-    align-items: center;
-    justify-items: center; }
-    .products img {
-      width: 250px; }
-    .products img:hover {
-      transform: scale(1.2);
-      transition: all 1s; }
-    .products__1 {
-      grid-area: products__1; }
-      .products__1 img {
-        width: 190px; }
-    .products__2 {
-      grid-area: products__2; }
-    .products__3 {
-      grid-area: products__8; }
-      .products__3 img {
-        width: 220px; }
-    .products__4 {
-      grid-area: products__4; }
-    .products__5 {
-      grid-area: products__5; }
-    .products__6 {
-      grid-area: products__6; }
-    .products__7 {
-      grid-area: products__7; }
-    .products__8 {
-      grid-area: products__3; }
-      .products__8 img {
-        width: 200px; }
-    .products__9 {
-      grid-area: products__9; }
-    .products__10 {
-      grid-area: products__10; } }
+  .card:hover {
+    transform: scale(1.05);
+    transition: all 1s; }
+  .card-img-top {
+    height: 250px; } }
 
 .contact_us {
   display: flex;
