@@ -8395,7 +8395,20 @@ textarea.form-control-lg {
     width: 95vw;
     height: 333px; }
 
+.main_principal {
+  color: white; }
+  .main_principal_carrusel {
+    width: 400px;
+    padding-left: 25px;
+    padding-right: 25px; }
+
 /* RESPONSIVE PARA TABLET */
+@media (min-width: 768px) {
+  .main_principal {
+    color: white; }
+    .main_principal_carrusel {
+      width: 800px; } }
+
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px) {
   /* CSS DE INDEX */
@@ -8450,7 +8463,8 @@ textarea.form-control-lg {
     display: flex;
     flex-direction: column; }
     .about_us_image img {
-      width: 600px;
+      width: 750px;
+      height: auto;
       padding-top: 50px; } }
 
 /* RESPONSIVE PARA DESKTOP */
@@ -8603,25 +8617,26 @@ textarea.form-control-lg {
       width: 300px;
       font-family: sans-serif !important; } }
 
+.card-img-top {
+  height: 250px; }
+
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px) {
   .card:hover {
     transform: scale(1.05);
-    transition: all 1s; }
-  .card-img-top {
-    height: 250px; } }
+    transition: all 1s; } }
 
 .contact_us {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 15px 80px 15px; }
+  padding: 0px 15px; }
 
 .map iframe {
   width: 350px;
-  height: 250px;
-  padding-top: 15px; }
+  height: 300px;
+  padding: 35px 0px; }
 
 .contact__form textarea {
   width: 230px;
@@ -8645,13 +8660,8 @@ textarea.form-control-lg {
   .contact_us {
     justify-content: center;
     align-items: center; }
-  .contact__form textarea {
-    width: 350px;
-    height: 220px; }
-  .contact__form input {
-    width: 350px; }
-  .contact__form #image {
-    width: 200px; } }
+    .contact_us_form {
+      width: 70%; } }
 
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px) {
@@ -8661,7 +8671,8 @@ textarea.form-control-lg {
     flex-direction: row;
     justify-content: space-evenly; }
     .contact_us_form {
-      width: 30%; }
+      width: 30%;
+      padding: 20px 50px 30px 50px; }
   .map iframe {
     width: 600px;
     height: 450px; } }

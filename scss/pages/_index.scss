@@ -1,5 +1,4 @@
 .main {
-
   &_principal_our {
     display: flex;
     flex-direction: column;
@@ -19,10 +18,23 @@
     }
   }
 }
+.main_principal {
+  color: white;
+  &_carrusel {
+    width: 400px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 
 /* RESPONSIVE PARA TABLET */
 @media (min-width: 768px) {
-  
+  .main_principal {
+    color: white;
+    &_carrusel {
+      width: 800px;
+    }
+  }
   }
 
 

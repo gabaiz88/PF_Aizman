@@ -3,12 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 15px 80px 15px;
+  padding: 0px 15px;
 }
 .map iframe {
   width: 350px;
-  height: 250px;
-  padding-top: 15px;
+  height: 300px;
+  padding: 35px 0px;
 }
 .contact__form {
   textarea {
@@ -37,18 +37,8 @@
   .contact_us{
     justify-content: center;
     align-items: center;
-  }
-  
-  .contact__form {
-    textarea {
-      width: 350px;
-      height: 220px;
-    }
-    input {
-      width: 350px;
-    }
-    #image {
-      width: 200px;
+    &_form{
+      width: 70%;
     }
   }
 }
@@ -62,6 +52,7 @@
     justify-content: space-evenly;
     &_form{
       width: 30%;
+      padding: 20px 50px 30px 50px;
     }
   }
 
