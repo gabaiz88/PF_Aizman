@@ -8674,8 +8674,6 @@ textarea.form-control-lg {
   background: white;
   background: linear-gradient(180deg, white 20%, #f0f2f0 50%);
   padding: 0px 15px 0px 15px; }
-  .main__headernavbar {
-    position: fixed; }
 
 .navbar-brand img {
   width: 320px; }
