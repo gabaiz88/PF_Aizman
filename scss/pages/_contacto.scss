@@ -52,12 +52,14 @@
     justify-content: space-evenly;
     &_form{
       width: 30%;
-      padding: 20px 50px 30px 50px;
+      padding: 50px 50px 80px 50px;
     }
   }
 
   .map iframe {
     width: 600px;
     height: 450px;
+    @include box-shadow (3);
+    padding: 0;
   }
 }

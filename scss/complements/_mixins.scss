@@ -1,0 +1,11 @@
+@mixin box_shadow($level) {
+    @if $level==1 {
+        box-shadow: 4px 5px 16px 1px rgba(0,0,0,0.71); -webkit-box-shadow: 4px 5px 16px 1px rgba(0,0,0,0.71); -moz-box-shadow: 4px 5px 16px 1px rgba(0,0,0,0.71);
+    }    
+    @else if $level==2 {
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+    @else if $level==3 {
+        box-shadow: 5px 4px 6px 0px rgba(0,0,0,0.68); -webkit-box-shadow: 5px 4px 6px 0px rgba(0,0,0,0.68); -moz-box-shadow: 5px 4px 6px 0px rgba(0,0,0,0.68);
+    }
+}

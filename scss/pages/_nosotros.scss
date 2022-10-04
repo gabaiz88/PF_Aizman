@@ -50,8 +50,10 @@
             height: fit-content;
           }
         &_image img {
-            width: 700px;
-            padding: 50px;
+            width: 600px;
+            height: 320px;
+            padding: 0;
+            @include box_shadow(3);
           }
       }
    }

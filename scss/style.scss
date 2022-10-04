@@ -3,6 +3,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+@import "./complements/mixins";
 @import "./components/_body";
 @import "./components/_whatsappIco";
 @import "./components/footer";

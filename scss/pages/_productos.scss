@@ -1,5 +1,9 @@
+.card{
+  @include box_shadow(2);
+  width: 230px;
+} 
 .card-img-top{
-  height: 250px;
+  height: 220px;
 }
 
 @media (min-width: 768px){
@@ -14,4 +18,5 @@
       transform: scale(1.05);
       transition: all 1s;
       }
-}
+  }
+

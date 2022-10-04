@@ -8381,6 +8381,76 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+* {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif !important; }
+
+.bodyCompleto {
+  background: #f0f2f0;
+  background: -webkit-linear-gradient(to bottom, #f0f2f0, #000c40);
+  background: linear-gradient(to bottom, #f0f2f0, #000c40); }
+
+/* logo whatsapp */
+.fixed {
+  position: fixed;
+  bottom: 40px;
+  right: 20px; }
+  .fixed img {
+    width: 40px; }
+
+/* RESPONSIVE PARA TABLET */
+@media (min-width: 768px) {
+  /* logo whatsapp */
+  .fixed {
+    position: fixed;
+    bottom: 60px;
+    right: 40px; }
+    .fixed img {
+      width: 50px; } }
+
+.footer {
+  text-align: center;
+  background-color: #000a36;
+  color: white;
+  width: 100vw;
+  bottom: 0px;
+  padding-top: 10px; }
+  .footer img {
+    padding-top: 10px; }
+  .footer__contacto_footer h5, .footer__contacto_footer .h5 {
+    font-size: medium;
+    color: #9f9e9e; }
+  .footer__contacto_footer h6, .footer__contacto_footer .h6 {
+    font-size: small;
+    color: grey; }
+  .footer__contacto_footer #direccion:hover {
+    color: white; }
+  .footer h7 {
+    font-size: small; }
+
+.main__header {
+  background: white;
+  background: linear-gradient(180deg, white 20%, #f0f2f0 50%);
+  padding: 0px 15px 0px 15px; }
+
+.navbar-brand img {
+  width: 320px; }
+
+/* RESPONSIVE PARA TABLET */
+@media (min-width: 768px) {
+  .navbar-brand img {
+    width: 450px; } }
+
+/* RESPONSIVE PARA DESKTOP */
+@media (min-width: 992px) {
+  /* En general para font size y padding se usa rem o em que es mas responsive */
+  .main__header {
+    padding: 0px 200px 0px 100px;
+    text-decoration: solid;
+    font-size: medium; }
+  .navbar-nav {
+    padding-top: 100px; } }
+
 .main_principal_our {
   display: flex;
   flex-direction: column;
@@ -8419,7 +8489,7 @@ textarea.form-control-lg {
       width: 1150px;
       justify-self: center;
       align-self: end;
-      padding-right: 30px; }
+      padding-right: 50px; }
     .main_principal_our {
       display: grid;
       grid-template-areas: "carrusel carrusel" "main_img_nosotros main_video";
@@ -8432,12 +8502,19 @@ textarea.form-control-lg {
         grid-area: main_img_nosotros;
         justify-self: end; }
         .main_principal_our__image img {
-          width: 600px; }
+          width: 600px;
+          padding: 0;
+          box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
+          -webkit-box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
+          -moz-box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71); }
       .main_principal_our__video__fabricacion {
-        grid-area: main_video;
-        padding-top: 10px; }
+        grid-area: main_video; }
         .main_principal_our__video__fabricacion iframe {
-          width: 560px; } }
+          width: 560px;
+          box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
+          -webkit-box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
+          -moz-box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
+          padding: 0; } }
 
 .about_us {
   display: flex;
@@ -8481,8 +8558,12 @@ textarea.form-control-lg {
       text-align: center;
       height: fit-content; }
     .about_us_image img {
-      width: 700px;
-      padding: 50px; } }
+      width: 600px;
+      height: 320px;
+      padding: 0;
+      box-shadow: 5px 4px 6px 0px rgba(0, 0, 0, 0.68);
+      -webkit-box-shadow: 5px 4px 6px 0px rgba(0, 0, 0, 0.68);
+      -moz-box-shadow: 5px 4px 6px 0px rgba(0, 0, 0, 0.68); } }
 
 .lista_precios {
   padding: 100px;
@@ -8617,8 +8698,14 @@ textarea.form-control-lg {
       width: 300px;
       font-family: sans-serif !important; } }
 
+.card {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 230px; }
+
 .card-img-top {
-  height: 250px; }
+  height: 220px; }
 
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px) {
@@ -8672,74 +8759,11 @@ textarea.form-control-lg {
     justify-content: space-evenly; }
     .contact_us_form {
       width: 30%;
-      padding: 20px 50px 30px 50px; }
+      padding: 50px 50px 80px 50px; }
   .map iframe {
     width: 600px;
-    height: 450px; } }
-
-* {
-  margin: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif !important; }
-
-.main__header {
-  background: white;
-  background: linear-gradient(180deg, white 20%, #f0f2f0 50%);
-  padding: 0px 15px 0px 15px; }
-
-.navbar-brand img {
-  width: 320px; }
-
-.bodyCompleto {
-  background: #f0f2f0;
-  background: -webkit-linear-gradient(to bottom, #f0f2f0, #000c40);
-  background: linear-gradient(to bottom, #f0f2f0, #000c40); }
-
-/* logo whatsapp */
-.fixed {
-  position: fixed;
-  bottom: 40px;
-  right: 20px; }
-  .fixed img {
-    width: 40px; }
-
-.footer {
-  text-align: center;
-  background-color: #000a36;
-  color: white;
-  width: 100vw;
-  bottom: 0px;
-  padding-top: 10px; }
-  .footer img {
-    padding-top: 10px; }
-  .footer__contacto_footer h5, .footer__contacto_footer .h5 {
-    font-size: medium;
-    color: #9f9e9e; }
-  .footer__contacto_footer h6, .footer__contacto_footer .h6 {
-    font-size: small;
-    color: grey; }
-  .footer__contacto_footer #direccion:hover {
-    color: white; }
-  .footer h7 {
-    font-size: small; }
-
-/* RESPONSIVE PARA TABLET */
-@media (min-width: 768px) {
-  /* logo whatsapp */
-  .fixed {
-    position: fixed;
-    bottom: 60px;
-    right: 40px; }
-    .fixed img {
-      width: 50px; }
-  .navbar-brand img {
-    width: 450px; } }
-
-/* RESPONSIVE PARA DESKTOP */
-@media (min-width: 992px) {
-  /* En general para font size y padding se usa rem o em que es mas responsive */
-  .main__header {
-    padding: 0px 200px 0px 100px;
-    text-decoration: solid;
-    font-size: medium; }
-  .navbar-nav {
-    padding-top: 100px; } }
+    height: 450px;
+    box-shadow: 5px 4px 6px 0px rgba(0, 0, 0, 0.68);
+    -webkit-box-shadow: 5px 4px 6px 0px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 5px 4px 6px 0px rgba(0, 0, 0, 0.68);
+    padding: 0; } }

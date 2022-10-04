@@ -35,8 +35,7 @@
       width: 800px;
     }
   }
-  }
-
+}
 
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px) {
@@ -48,7 +47,7 @@
       width: 1150px;
       justify-self: center;
       align-self: end;
-      padding-right: 30px;
+      padding-right: 50px;
     }
     &_our {
       display: grid;
@@ -66,14 +65,17 @@
         justify-self: end;
         img {
           width: 600px;
+          padding: 0;
+          @include box_shadow(1);
         }
       }
 
       &__video__fabricacion {
         grid-area: main_video;
-        padding-top: 10px;
         iframe {
           width: 560px;
+          @include box_shadow(1);
+          padding: 0;
         }
       }
     }
