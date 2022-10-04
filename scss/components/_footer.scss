@@ -1,0 +1,27 @@
+.footer {
+    text-align: center;
+    background-color: #000a36;
+    color: white;
+    width: 100vw;
+    bottom: 0px;
+    padding-top: 10px;
+    img {
+      padding-top: 10px;
+    }
+    &__contacto_footer {
+      h5 {
+        font-size: medium;
+        color: rgb(159, 158, 158);
+      }
+      h6 {
+        font-size: small;
+        color: grey;
+      }
+      #direccion:hover {
+        color: white;
+      }
+    }
+    h7 {
+      font-size: small;
+    }
+  }

@@ -3,116 +3,12 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
-
+@import "./components/_body";
+@import "./components/_whatsappIco";
+@import "./components/footer";
+@import "./components/header";
 @import "./pages/index";
 @import "./pages/nosotros";
 @import "./pages/listaDePrecios";
 @import "./pages/productos";
 @import "./pages/contacto";
-
-* {
-  margin: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif !important;
-}
-
-.main__header {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 20%,
-    rgba(240, 242, 240, 1) 50%
-  );
-  padding: 0px 15px 0px 15px;
-  }
-
-.navbar-brand{
-  img{
-    width: 320px;
-  }
-}
-
-.bodyCompleto {
-  background: #f0f2f0;
-  background: -webkit-linear-gradient(to bottom, #f0f2f0, #000c40);
-  background: linear-gradient(to bottom, #f0f2f0, #000c40);
-}
-
-/* logo whatsapp */
-.fixed {
-  position: fixed;
-  bottom: 40px;
-  right: 20px;
-  img {
-    width: 40px;
-  }
-}
-
-.footer {
-  text-align: center;
-  background-color: #000a36;
-  color: white;
-  width: 100vw;
-  bottom: 0px;
-  padding-top: 10px;
-  img {
-    padding-top: 10px;
-  }
-  &__contacto_footer {
-    h5 {
-      font-size: medium;
-      color: rgb(159, 158, 158);
-    }
-    h6 {
-      font-size: small;
-      color: grey;
-    }
-    #direccion:hover {
-      color: white;
-    }
-  }
-  h7 {
-    font-size: small;
-  }
-}
-
-
-
-/* RESPONSIVE PARA TABLET */
-@media (min-width: 768px) {
-  /* logo whatsapp */
-  .fixed {
-    position: fixed;
-    bottom: 60px;
-    right: 40px;
-    img {
-      width: 50px;
-    }
-  }
-
-  
-.navbar-brand{
-  img{
-    width: 450px;
-  }
-}
-}
-
-/* RESPONSIVE PARA DESKTOP */
-@media (min-width: 992px) {
-
-  /* En general para font size y padding se usa rem o em que es mas responsive */
-
-  .main__header {
-    padding: 0px 200px 0px 100px;
-    text-decoration: solid;
-    font-size:medium;
-  }
-
-  .navbar-nav{
-    padding-top: 100px;
-  }
-
-
-  }
-  
