@@ -91,22 +91,22 @@
     animation-iteration-count: infinite;
     animation-duration: 1.5s;
     img {
-        width: 150px;
-        padding-top: 35px;
-        display: block;
-      }
+      width: 150px;
+      padding-top: 35px;
+      display: block;
+    }
   }
-  
+
   .arrow_2 {
     grid-area: arrow_2;
     animation-name: arrow;
     animation-iteration-count: infinite;
     animation-duration: 1.5s;
     img {
-        width: 150px;
-        padding-top: 35px;
-        display: block;
-      }
+      width: 150px;
+      padding-top: 35px;
+      display: block;
+    }
   }
 
   @keyframes arrow {
@@ -169,18 +169,18 @@
   .TextoLPMenor {
     grid-area: TextoLPMenor;
     h2 {
-        padding-top: 50px;
-        width: 300px;
-        font-family: sans-serif !important;
-      }
+      padding-top: 50px;
+      width: 300px;
+      font-family: sans-serif !important;
+    }
   }
 
   .TextoLPMayor {
     grid-area: TextoLPMayor;
     h2 {
-        padding-top: 50px;
-        width: 300px;
-        font-family: sans-serif !important;
-      }
+      padding-top: 50px;
+      width: 300px;
+      font-family: sans-serif !important;
+    }
   }
 }
