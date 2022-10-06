@@ -8383,7 +8383,10 @@ textarea.form-control-lg {
 
 * {
   margin: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif !important; }
+  font-family: sans-serif; }
+
+.p1 {
+  font-family: 'Arial'; }
 
 .main {
   padding-top: 150px; }
