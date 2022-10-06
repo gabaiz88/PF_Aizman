@@ -1,8 +1,25 @@
 // Include any default variable overrides here (though functions won't be available)
 $footer: #000a36;
+$primary: #3B71CA;
+$Secondary: #9FA6B2;
+$Success:#14A44D;
+$Danger:#DC4C64;
+$Warning: #E4A11B;
+$Info: #54B4D3;
+$Light:#FBFBFB;
+$Dark: #332D2D;
+
 
 $theme_colors: (
   "footerBg": $footer,
+  "primary": $primary,
+  "Secondary": $Secondary,
+  "Success":$Success,
+  "Danger":$Danger,
+  "Warning":$Warning,
+  "Info": $Info,
+  "Light": $Light,
+  "Dark": $Dark,
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
