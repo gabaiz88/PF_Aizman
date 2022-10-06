@@ -8388,6 +8388,12 @@ textarea.form-control-lg {
 .p1 {
   font-family: 'Arial'; }
 
+.p2 {
+  font-size: 0.9rem; }
+
+.p3 {
+  font-size: 0.8rem; }
+
 .main {
   padding-top: 150px; }
 
@@ -8741,7 +8747,7 @@ textarea.form-control-lg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 15px; }
+  padding: 20px 15px; }
 
 .map iframe {
   width: 350px;
