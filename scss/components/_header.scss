@@ -10,21 +10,20 @@
     rgba(240, 242, 240, 1) 50%
   ) !important;
 }
-
-.navbar-brand {
-  img {
+.navbar-brand{
+  img{
     width: 320px;
   }
 }
+
 /* RESPONSIVE PARA TABLET */
 @media (min-width: 768px) {
-  .navbar-brand {
-    img {
-      width: 450px;
+  .navbar-brand{
+    img{
+      width: 453px;
     }
   }
 }
-
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px) {
   /* En general para font size y padding se usa rem o em que es mas responsive */
@@ -34,9 +33,12 @@
     text-decoration: solid;
     font-size: medium;
   }
+
   .navbar-nav {
     padding-top: 100px;
     position: fixed;
     z-index: 1;
   }
+
+  
 }
