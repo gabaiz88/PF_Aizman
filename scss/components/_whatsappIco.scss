@@ -1,13 +1,12 @@
-
 /* logo whatsapp */
 .fixed {
-    position: fixed;
-    bottom: 40px;
-    right: 20px;
-    img {
-      width: 40px;
-    }
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  img {
+    width: 40px;
   }
+}
 
 /* RESPONSIVE PARA TABLET */
 @media (min-width: 768px) {

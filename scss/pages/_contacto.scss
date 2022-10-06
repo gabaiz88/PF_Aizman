@@ -34,10 +34,10 @@
     padding-top: 40px;
   }
 
-  .contact_us{
+  .contact_us {
     justify-content: center;
     align-items: center;
-    &_form{
+    &_form {
       width: 70%;
     }
   }
@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    &_form{
+    &_form {
       width: 30%;
       padding: 50px 50px 50px 50px;
     }
@@ -59,7 +59,7 @@
   .map iframe {
     width: 600px;
     height: 450px;
-    @include box-shadow (3);
+    @include box-shadow(3);
     padding: 0;
   }
 }
