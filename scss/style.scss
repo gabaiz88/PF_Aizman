@@ -1,4 +1,9 @@
 // Include any default variable overrides here (though functions won't be available)
+$footer: #000a36;
+
+$theme_colors: (
+  "footerBg": $footer,
+);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
