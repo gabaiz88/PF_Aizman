@@ -8,20 +8,21 @@
 
     &__image img {
       padding-top: 10px;
-      width: 95vw;
+      width: 330px;
       padding-bottom: 10px;
     }
 
     &__video__fabricacion iframe {
-      width: 95vw;
+      width: 330px;
       height: 333px;
     }
   }
 }
+
 .main_principal {
-  color: white;
+  
   &_carrusel {
-    width: 400px;
+    width: 370px;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -29,8 +30,21 @@
 
 /* RESPONSIVE PARA TABLET */
 @media (min-width: 768px) {
+  .main {
+    &_principal_our {
+      &__image img {
+        padding-top: 10px;
+        width: 750px;
+        padding-bottom: 10px;
+      }
+      &__video__fabricacion iframe {
+        width: 750px;
+        height: 333px;
+      }
+    }
+  }
+
   .main_principal {
-    color: white;
     &_carrusel {
       width: 800px;
     }

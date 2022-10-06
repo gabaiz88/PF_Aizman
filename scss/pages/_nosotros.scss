@@ -1,59 +1,62 @@
+.about_us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px 15px;
+  &_description {
+    border-radius: 41px;
+    border: solid black;
+    text-align: center;
+    height: fit-content;
+    h2 h6 {
+      font-size: x-small;
+    }
+  }
+  &_image img {
+    width: 360px;
+    height: 390px;
+    padding: 30px 15px 100px 15px;
+  }
+}
 
+/* RESPONSIVE PARA TABLET */
+@media (min-width: 768px) {
   .about_us {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 15px 15px 15px;
+    padding-top: 100px;
+    &_image img {
+      width: 750px;
+      height: auto;
+      padding-top: 100px;
+    }
+    &_description { 
+      width: 650px;
+    }
+  }
+}
+
+/* RESPONSIVE PARA DESKTOP */
+@media (min-width: 992px) {
+  /* CSS de NOSOTROS*/
+  .about_us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
     &_description {
-        border-radius: 41px;
-        border: solid black;
-        text-align: center;
-        height: fit-content;
-        h2 h6{
-            font-size: x-small;
-           }
-      }
-      &_image img {
-        width: 380px;
-        height: 400px;
-        padding: 20px 15px 100px 15px;
-      }
+      border-radius: 41px;
+      border: solid black;
+      width: 600px;
+      text-align: center;
+      height: fit-content;
+    }
+    &_image img {
+      width: 600px;
+      height: 320px;
+      padding: 0;
+      @include box_shadow(3);
+    }
   }
-
-  /* RESPONSIVE PARA TABLET */
-  @media (min-width: 768px){
-    
-    .about_us {
-        display: flex;
-        flex-direction: column;
-        &_image img {
-            width: 750px;
-            height: auto;
-            padding-top: 50px;
-          }
-      }
-  }
-
-   /* RESPONSIVE PARA DESKTOP */
-   @media (min-width: 992px) {
-     /* CSS de NOSOTROS*/
-     .about_us {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        &_description {
-            border-radius: 41px;
-            border: solid black;
-            width: 600px;
-            text-align: center;
-            height: fit-content;
-          }
-        &_image img {
-            width: 600px;
-            height: 320px;
-            padding: 0;
-            @include box_shadow(3);
-          }
-      }
-   }
+}

@@ -1,3 +1,7 @@
+.products {
+  padding-left: 20px;
+}
+
 .card {
   @include box_shadow(2);
   width: 230px;
@@ -7,12 +11,17 @@
 }
 
 @media (min-width: 768px) {
-  
+  .products {
+    padding-left: 100px;
+  }
 }
 
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px) {
   // /* CSS DE PRODUCTOS *
+  .products {
+    padding-left: 50px;
+  }
 
   .card:hover {
     transform: scale(1.05);
