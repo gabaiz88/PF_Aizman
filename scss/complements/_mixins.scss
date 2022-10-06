@@ -10,3 +10,8 @@
     }
 }
 
+@mixin borders($border_width) {
+    @if $border_width == 1 {
+        border-radius: 41px; border: solid black;
+    }
+}
