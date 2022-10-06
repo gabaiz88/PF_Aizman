@@ -63,10 +63,10 @@
       &__image {
         grid-area: main_img_nosotros;
         justify-self: end;
+        @include box_shadow(1);
         img {
           width: 600px;
           padding: 0;
-          @include box_shadow(1);
         }
       }
 

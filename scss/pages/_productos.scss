@@ -1,13 +1,13 @@
-.card{
+.card {
   @include box_shadow(2);
   width: 230px;
-} 
-.card-img-top{
+}
+.card-img-top {
   height: 220px;
 }
 
-@media (min-width: 768px){
-
+@media (min-width: 768px) {
+  
 }
 
 /* RESPONSIVE PARA DESKTOP */
@@ -15,8 +15,7 @@
   // /* CSS DE PRODUCTOS *
 
   .card:hover {
-      transform: scale(1.05);
-      transition: all 1s;
-      }
+    transform: scale(1.05);
+    transition: all 1s;
   }
-
+}

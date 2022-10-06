@@ -8412,7 +8412,6 @@ textarea.form-control-lg {
   text-align: center;
   background-color: #000a36;
   color: white;
-  width: 100vw;
   bottom: 0px;
   padding-top: 10px; }
   .footer img {
@@ -8431,7 +8430,8 @@ textarea.form-control-lg {
 .main__header {
   background: white;
   background: linear-gradient(180deg, white 20%, #f0f2f0 50%);
-  padding: 0px 15px 0px 15px; }
+  padding: 0px 15px 0px 15px;
+  width: 100%; }
 
 .navbar-brand img {
   width: 320px; }
@@ -8500,13 +8500,13 @@ textarea.form-control-lg {
       align-items: flex-start; }
       .main_principal_our__image {
         grid-area: main_img_nosotros;
-        justify-self: end; }
+        justify-self: end;
+        box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
+        -webkit-box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
+        -moz-box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71); }
         .main_principal_our__image img {
           width: 600px;
-          padding: 0;
-          box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
-          -webkit-box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
-          -moz-box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71); }
+          padding: 0; }
       .main_principal_our__video__fabricacion {
         grid-area: main_video; }
         .main_principal_our__video__fabricacion iframe {
