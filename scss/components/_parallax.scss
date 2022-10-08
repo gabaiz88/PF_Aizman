@@ -1,0 +1,11 @@
+@media (min-width: 992px) {
+  .parallax {
+    background-image: url("../images/parallax2.jpg");
+    min-height: 400px;
+    margin-top: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -8517,7 +8517,7 @@ textarea.form-control-lg {
   width: 100%; }
 
 .navbar {
-  background: linear-gradient(180deg, white 20%, #f0f2f0 50%) !important; }
+  background: linear-gradient(180deg, white 20%, #f3f4f6 50%) !important; }
 
 .navbar-brand img {
   width: 320px; }
@@ -8538,6 +8538,16 @@ textarea.form-control-lg {
     padding-top: 100px;
     position: fixed;
     z-index: 1; } }
+
+@media (min-width: 992px) {
+  .parallax {
+    background-image: url("../images/parallax2.jpg");
+    min-height: 400px;
+    margin-top: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
 .main_principal_our {
   display: flex;

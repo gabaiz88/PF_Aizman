@@ -19,6 +19,4 @@ function growShrinkLogo() {
     Logo.style.width = '453px';
     navbar_prueba.style.padding = "0px 0px 0px 0px";
   }
-
-
 }
