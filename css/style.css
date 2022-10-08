@@ -8514,7 +8514,8 @@ textarea.form-control-lg {
 
 .main__header {
   padding: 0px 15px 0px 15px;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .navbar {
   background: linear-gradient(180deg, white 20%, #f3f4f6 50%) !important; }
