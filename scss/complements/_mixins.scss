@@ -18,5 +18,8 @@
   @if $border_width == 1 {
     border-radius: 41px;
     border: solid black;
+  } @else if $border_width == 2 {
+    border: 7px dashed #2d2c38;
+    border-radius: 41px;
   }
 }
