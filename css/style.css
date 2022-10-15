@@ -8605,11 +8605,12 @@ textarea.form-control-lg {
       width: 1150px;
       justify-self: center;
       align-self: end;
-      padding-right: 50px; }
+      padding-right: 50px;
+      padding-top: 50px; }
     .main_principal_our {
       display: grid;
       grid-template-areas: "carrusel carrusel" "main_img_nosotros main_video";
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 0.5fr;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
       justify-content: center;
@@ -8619,18 +8620,30 @@ textarea.form-control-lg {
         justify-self: end;
         box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
         -webkit-box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
-        -moz-box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71); }
+        -moz-box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
+        align-self: center; }
         .main_principal_our__image img {
           width: 600px;
           padding: 0; }
       .main_principal_our__video__fabricacion {
-        grid-area: main_video; }
+        grid-area: main_video;
+        align-self: center;
+        padding-top: 8px; }
         .main_principal_our__video__fabricacion iframe {
           width: 560px;
           box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
           -webkit-box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
           -moz-box-shadow: 4px 5px 16px 1px rgba(0, 0, 0, 0.71);
-          padding: 0; } }
+          padding: 0; }
+  .seccion_cards2 {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    gap: 20px; }
+  #card_index {
+    height: 350px; }
+  .card_bodybtn {
+    text-align: center; } }
 
 .about_us {
   display: flex;
@@ -8836,7 +8849,7 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .products {
     padding-left: 50px; }
-  .card:hover {
+  #card_productos:hover {
     transform: scale(1.05);
     transition: all 1s; } }
 
