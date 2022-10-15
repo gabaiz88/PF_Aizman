@@ -97,21 +97,47 @@
       }
     }
   }
+
+  .card_wrapper{
+    padding-bottom: 50px;
+  }
   .seccion_cards2{
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 50px;
-    gap: 20px;
-  }
-  #card_index{
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(224, 220, 220);
+    border-radius: 20px;
     height: 350px;
   }
 
-  .card_body{
-    &btn{
-      text-align: center;
+  #card_index{
+    margin: 15px;
+    width: 300px;
+    img{
+      padding: 10px;
+      width: auto;
+      height: 180px;
+      border-radius: 20px;
     }
-    
+    #titulo{
+        font-size: 30px;
+        color: black;
+        text-align: center;
+      }
+    #cuerpo_body{
+      a{
+        color: black;
+      }
+    }
+      }
+
+  .card_body{
+    #boton_card{
+      color: black;
+    }
   }
+
+  #boton_card{
+    margin-left: 38px;
+}
 }
 
