@@ -20,6 +20,6 @@
     border: solid black;
   } @else if $border_width == 2 {
     border: 7px dashed #2d2c38;
-    border-radius: 41px;
+    border-radius: 41px 41px 0 41px;
   }
 }
