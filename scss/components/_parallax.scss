@@ -1,3 +1,12 @@
+@media (max-width: 992px){
+  .parallax {
+display: none;
+    &_container {
+   display: none;
+    }
+  }
+}
+
 @media (min-width: 992px) {
   .parallax {
     background-image: url("../images/parallax2.jpg");
@@ -7,20 +16,30 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    &_container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-right: 60px;
+      padding-top: 20px;
+      h2 {
+        font-size: 45px;
+        letter-spacing: 0px;
+        word-spacing: 5px; 
+        color: #ffffff; 
+        font-weight: 800;
+        text-decoration: none solid rgb(68, 68, 68);
+        font-style: normal;
+        font-variant: normal;
+        text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.6);
+        text-transform: none;
+        text-align: center;
+      }
+      #boton_parallax {
+        padding-top: 10px;
+        margin-right: 110px;
+        margin-top: 20px;
+      }
     }
-  #demoFont {
-      font-size: 40px;
-      letter-spacing: 0px;
-      word-spacing: 0px;
-      color: #000000;
-      font-weight: 700;
-      text-decoration: none solid rgb(68, 68, 68);
-      font-style: normal;
-      font-variant: normal;
-      text-shadow: 0px 2px 1px rgba(0,0,0,0.6);
-      text-transform: none;
-      text-align: left;
-      padding-left: 700px;
-      padding-top: 120px;    
-    }
+  }
 }
