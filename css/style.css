@@ -8625,7 +8625,12 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 10px 14px; }
+
+.card-content a {
+  align-self: center;
+  margin: 10px; }
 
 .card-image {
   position: relative;
@@ -8652,13 +8657,12 @@ textarea.form-control-lg {
   border: none;
   color: #fff;
   padding: 8px 16px;
-  background-color: #4070f4;
+  background-color: #2849a1;
   border-radius: 6px;
-  margin: 14px;
   cursor: pointer;
   transition: all 0.3s ease; }
-  .button :hover {
-    background: #265df2; }
+  .button:hover {
+    background-color: #1d3578; }
 
 .overlay {
   position: absolute;
