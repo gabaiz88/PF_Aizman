@@ -1,4 +1,17 @@
-.modal-header h1{
-        font-size: larger;
-        text-align: center;
+.modal-body {
+  img {
+    width: 280px;
+    height: 200px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-body {
+    img {
+      width: 400px;
+      height: 320px;
+      padding-left: 40px;
     }
+  }
+}
