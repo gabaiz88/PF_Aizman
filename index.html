@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,6 +7,7 @@
   <meta name="description"
     content="Somos la papelera numero uno del barrio de Almagro con mas de 20 años de trayectoria. Te garantizamos los precios mas bajos">
   <meta name="keywords" content="papelera, almagro, ventas, ecommerce, descartables">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.css" />
   <title>LA BOUTIQUE del embalaje, Tu papelera de confianza</title>
@@ -48,7 +48,6 @@
     </nav>
   </header>
   <!-- Fin Barra Navegacion -->
-
   <div class="main">
     <div class="parallax">
       <div class="parallax_container">
@@ -60,10 +59,9 @@
         </a>
       </div>
     </div>
-
     <main class="main_principal">
       <div class="main_principal_our">
-        <!-- Comienzo de carrusel -->
+       <!-- Comienzo de carrusel  -->
         <div class="main_principal_carrusel">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
@@ -97,7 +95,7 @@
             </button>
           </div>
         </div>
-        <!-- Fin carrusel -->
+         <!-- Fin carrusel -->
         <div class="main_principal_our__image">
           <a href="nosotros.html"><img src="images/LogoLaboutique.jpg" alt="logo" /></a>
         </div>
@@ -125,29 +123,6 @@
                   <div class="card-content">
                     <h3 class="name">Rollos de Araranque</h3>
                     <p class="description">Todas las medidas. Primera calidad. </p>
-                    <input type="checkbox" id="btn-modal1">
-                    <label for="btn-modal1" class="lbl-modal1" style="background: blue;">Mas Detalles</label>
-                    <div class="modal1">
-                      <div class="contenedor">
-                        <header>Detalle del producto</header>
-                        <label for="btn-modal1"><img src="./images/3486005.png" alt="" width="25px"></label>
-                        <div class="contenido">
-                          <h2 style="text-align:center; font-weight: bold;">Nombre del Producto</h3>
-                            <div class="_interno_gral">
-                              <img src="./images/rollos_index.jpg" width="320px" border-radius="41px" alt="">
-                              <div class="_interno">
-                                <div class="_texto">
-                                  <p style="font-size:large; font-weight: bold;">Descripcion del producto</p>
-                                  <p style="text-align:start; font-size:medium;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Quibusdam molestiae aut cupiditate quaerat blanditiis ea magnam
-                                    iste </p>
-                                </div>
-                                <a href="./productos.html"><button class="boton_ver_mas">Ver Mas</button></a>
-                              </div>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
                 <div class="card swiper-slide">
@@ -214,31 +189,29 @@
         </div>
       </div>
     </main>
-  </div>
-<!-- Modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Launch demo modal
-</button>
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
+  </div> -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Detalle del producto</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <h1>hola</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae officiis dolor nulla repellendus blanditiis </p>
+        ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Volver</button>
-        <button type="button" class="btn btn-primary">Mas detalles</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
       </div>
     </div>
-  </div>
-</div>
+    </div>
   <!-- Logo Whatsapp -->
   <div class="fixed">
     <a href="https://walink.co/de9d0c"><img src="images/logoWA.png" alt="Whatsapp" width="50" /></a>
@@ -255,12 +228,15 @@
     <br>
     <h7>© Creado por Gabriel Aizman</h7>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+
   <script src="./scripts/swiper-bundle.min.js"></script>
-
-  <script type="text/javascript" src="./scripts/script.js"></script>
+  <script type="text/javascript" src="./scripts/script.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
-
 </html>

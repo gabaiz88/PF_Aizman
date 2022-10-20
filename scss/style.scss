@@ -25,7 +25,6 @@ $theme_colors: (
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
-@import "./modal";
 @import "./complements/mixins";
 @import "./components/_body";
 @import "./components/_whatsappIco";
