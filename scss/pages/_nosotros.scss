@@ -46,8 +46,11 @@
     padding-bottom: 100px;
     &_description {
       width: 600px;
-      text-align: center;
+      text-align: left;
       height: fit-content;
+      h2{
+        text-align: center;
+      }
     }
     &_image img {
       width: 600px;
