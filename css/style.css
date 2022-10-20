@@ -8459,6 +8459,10 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+.modal-header h1, .modal-header .h1 {
+  font-size: larger;
+  text-align: center; }
+
 * {
   margin: 0;
   font-family: sans-serif; }

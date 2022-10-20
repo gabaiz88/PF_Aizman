@@ -25,15 +25,16 @@ $theme_colors: (
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
-@import "./complements/mixins";
+@import "./components/_modal.scss";
+@import "./complements/_mixins";
 @import "./components/_body";
 @import "./components/_whatsappIco";
-@import "./components/footer";
-@import "./components/header";
-@import "./components/parallax";
-@import "./pages/index";
-@import "./pages/nosotros";
-@import "./pages/listaDePrecios";
-@import "./pages/productos";
-@import "./pages/contacto";
+@import "./components/_footer";
+@import "./components/_header";
+@import "./components/_parallax";
+@import "./pages/_index";
+@import "./pages/_nosotros";
+@import "./pages/_listaDePrecios";
+@import "./pages/_productos";
+@import "./pages/_contacto";
 

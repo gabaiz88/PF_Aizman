@@ -18,14 +18,14 @@
 <body class="bodyCompleto">
   <header class="main__header">
     <nav class="navbar fixed-top navbar-expand-lg">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="./index.html"><img src="./images/Logo.png" id="Logo" alt="LogoEmpresa"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active fs-5 fw-semibold px-4 pt-2" href="./index.html" id="nav_bar_links">Home</a>
             </li>
@@ -96,6 +96,7 @@
           </div>
         </div>
          <!-- Fin carrusel -->
+         <!-- Comienzo de Main -->
         <div class="main_principal_our__image">
           <a href="nosotros.html"><img src="images/LogoLaboutique.jpg" alt="logo" /></a>
         </div>
@@ -106,6 +107,7 @@
             allowfullscreen></iframe>
         </div>
       </div>
+      <!-- Comienzo de Slider -->
       <div class="cards_slider">
         <div class="slide-container swiper">
           <h1
@@ -123,26 +125,25 @@
                   <div class="card-content">
                     <h3 class="name">Rollos de Araranque</h3>
                     <p class="description">Todas las medidas. Primera calidad. </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Mas Detalles</button>
                   </div>
                 </div>
                 <div class="card swiper-slide">
                   <div class="image-content">
                     <span class="overlay"></span>
-
                     <div class="card-image">
                       <img src="./images/bolsasCamisetas.png" alt="Bolsas">
                     </div>
                   </div>
                   <div class="card-content">
                     <h3 class="name">Bolsas Camisetas</h3>
-                    <p class="description">Todas las medidas. Somos fabricantes de primera calidad. </p>
-                    <a href="./productos.html"><button class="button">Mas Detalles</button></a>
+                    <p class="description">Todas las medidas. Somos fabricantes. </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Mas Detalles</button>
                   </div>
                 </div>
                 <div class="card swiper-slide">
                   <div class="image-content">
                     <span class="overlay"></span>
-
                     <div class="card-image">
                       <img src="./images/Imagen-Categoria-Aluminio.png" alt="Aluminio">
                     </div>
@@ -150,13 +151,12 @@
                   <div class="card-content">
                     <h3 class="name">Bandejas De Aluminio</h3>
                     <p class="description">Todos los tamaños. </p>
-                    <a href="./productos.html"><button class="button m-4">Mas Detalles</button></a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Mas Detalles</button>
                   </div>
                 </div>
                 <div class="card swiper-slide">
                   <div class="image-content">
                     <span class="overlay"></span>
-
                     <div class="card-image">
                       <img src="./images/Imagen-Categoria-Carton.png" alt="Carton">
                     </div>
@@ -164,21 +164,20 @@
                   <div class="card-content">
                     <h3 class="name">Bandejas de Carton</h3>
                     <p class="description">Todas las medidas y tamaños. </p>
-                    <a href="./productos.html"><button class="button m-4">Mas Detalles</button></a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Mas Detalles</button>
                   </div>
                 </div>
                 <div class="card swiper-slide">
                   <div class="image-content">
                     <span class="overlay"></span>
-
                     <div class="card-image">
                       <img src="./images/Globos.png" alt="Globos">
                     </div>
                   </div>
                   <div class="card-content">
                     <h3 class="name">Globos</h3>
-                    <p class="description">Globos y cualquier tipo de cotillón para tu fiesta. </p>
-                    <a href="./productos.html"><button class="button">Mas Detalles</button></a>
+                    <p class="description">Cualquier tipo de cotillón para tu fiesta. </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Mas Detalles</button>
                   </div>
                 </div>
               </div>
@@ -188,18 +187,16 @@
             <div class="swiper-pagination"></div>
         </div>
       </div>
+      <!-- Fin de Slider -->
     </main>
-  </div> -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-    </button>
-    
-    <!-- Modal -->
+  </div>
+  <!-- Fin de main -->
+  <!-- Comienzo de Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Detalle de Producto</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -207,11 +204,12 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <a href="./productos.html "><button type="button" class="btn btn-primary">Más Productos</button></a>
       </div>
       </div>
     </div>
     </div>
+    <!-- Fin de Modal -->
   <!-- Logo Whatsapp -->
   <div class="fixed">
     <a href="https://walink.co/de9d0c"><img src="images/logoWA.png" alt="Whatsapp" width="50" /></a>
